@@ -1,0 +1,338 @@
+@font-face {
+    font-family: NetfixSans;
+    src: url("/Font/NetflixSans-Th.ttf");
+}
+
+@font-face {
+    font-family: NetfixSansBold;
+    src: url("/Font/NetflixSansBold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Images/Bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vm);
+    background-repeat: no-repeat;
+    height: 75vh;
+    position: relative;
+}
+
+.main .Box {
+    height: 75vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 57vw;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.Title_Text {
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: NetfixSans;
+    gap: 23px;
+    padding: 0 30px;
+
+}
+
+.Title_Text> :nth-child(1) {
+    font-family: NetfixSansBold;
+    font-size: 48px;
+    text-align: center;
+}
+
+.Title_Text> :nth-child(2) {
+    font-weight: 500px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.Title_Text> :nth-child(3) {
+    font-weight: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Separations {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.Button {
+    padding: 3px 7px;
+    font-family: NetfixSans;
+    font-weight: 800;
+    background-color: rgba(23, 23, 70, 0.4);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.Btn_Red_2 {
+    font-family: NetfixSansBold;
+    /* font-weight: bold; */
+    background-color: red;
+    color: white;
+    padding: 14.5px 30px;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+.Title_Text_Button {
+    font-family: NetfixSansBold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.main input {
+    background-color: rgba(23, 23, 70, 0.4);
+    color: white;
+    padding: 17px 165px 17px 10px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid red;
+}
+
+.Btn_Red_1 {
+    background-color: red;
+    color: white;
+}
+
+.First {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sec_Img {
+    position: relative;
+}
+
+.Sec_Img img {
+    max-width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.Sec_Img video {
+    position: absolute;
+    top: 87px;
+    right: 75px;
+    width: 405px;
+}
+
+.Text_1 {
+    font-family: NetfixSansBold;
+    font-size: 48px;
+}
+
+.Text_2 {
+    font-family: NetfixSans;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Third .Sec_Img video {
+    position: absolute;
+    top: 49px;
+    right: 103px;
+    width: 350px;
+}
+
+.Faq {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.Faq h1 {
+    text-align: center;
+    font-family: NetfixSansBold;
+    font-size: 48px;
+}
+
+.Faq_Box:hover {
+    background-color: #414141;
+}
+
+.Faq_Box {
+    transition: all 1s ease-out;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 20px;
+    max-width: 60vw;
+    margin: 20px auto;
+    font-family: NetfixSans;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Title_Text_Button_2 {
+    font-family: NetfixSansBold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.Button_Email {
+    background-color: rgba(23, 23, 70, 0.4);
+    color: white;
+    padding: 17px 165px 17px 10px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid red;
+}
+
+.Email {
+    text-align: center;
+    padding: 20px;
+    font-family: NetfixSansBold;
+    font-size: 18px;
+}
+
+footer {
+    color: rgb(168, 168, 168);
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a {
+    font-size: 14px;
+    color: rgb(168, 168, 168);
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .First {
+        flex-wrap: wrap;
+    }
+
+    .Sec_Img img {
+        max-width: 350px;
+    }
+
+    .Sec_Img video {
+        top: 55px;
+        right: 48px;
+        width: 255px;
+    }
+
+    .Third .Sec_Img video {
+        top: 30px;
+        right: 65px;
+        width: 222px;
+    }
+
+    .Title_Text> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .Title_Text> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .Title_Text> :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .Text_1 {
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    .Text_2 {
+        font-size: 18px;
+    }
+
+    .Btn_Red_2 {
+        padding: 4.5px 3px;
+        border-radius: 7px;
+        font-size: 15px;
+    }
+
+    .main input {
+        padding: 9px 111px 9px 11px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+}
